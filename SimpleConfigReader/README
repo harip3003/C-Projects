@@ -1,0 +1,29 @@
+How to use:
+----------
+
+The Simple Config Reader expects the settings file to be of the below format:
+
+--------------------------------------------
+#Settings File Format
+
+NumberOfSettingsInteger
+SettingName1=SettingValue1
+SettingName2=SettingValue2
+SettingName3=SettingValue3
+
+#Example Settings file
+
+4
+PORT=/dev/ttyACM0
+BAUD=115200
+STOP=0
+PARITY=1
+
+---------------------------------------------
+
+To read the settings, use loadSettingsFromFile(fileName) function. If 
+successful the function returns a handle which is not null.
+
+To read a settings value, use getSettingsValue(handle, settingsName) function.
+
+Please refer to demo.c for an example
