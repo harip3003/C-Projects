@@ -1,0 +1,5 @@
+10
+port=COM5
+baud=115200
+stop=8
+parity=10
